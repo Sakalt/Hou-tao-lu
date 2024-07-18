@@ -16,6 +16,21 @@ body {
     font-family: 'Hotal Sans', sans-serif;  /* フォントの設定 */
 }
 
+h2 {
+    font-family: 'Hotal Sans', sans-serif;  /* フォントの設定 */
+    font-size: 24px;  /* サイズ調整 */
+    color: #333;      /* 色の調整 */
+}
+
+.example-frame {
+    border: 1px solid #323232;
+    background-color: #999999;
+    padding: 5px;
+    border-radius: 5px;
+    font-family: 'Hotal Sans', sans-serif;  /* フォントの設定 */
+}
+
+/* 品詞の色を虹の9色に分ける */
 .noun { color: #FF4500; }    /* 赤オレンジ */
 .verb { color: #FF8C00; }    /* 橙色 */
 .adj { color: #FFD700; }     /* 黄色 */
@@ -25,12 +40,3 @@ body {
 .conj { color: #1E90FF; }    /* 青色 */
 .part { color: #9370DB; }    /* 紫色 */
 .intj { color: #FF1493; }    /* ディープピンク */
-
-/* 例文のスタイル */
-.example-frame {
-    border: 1px solid #323232;
-    background-color: #999999;
-    padding: 5px;
-    border-radius: 5px;
-    font-family: 'Hotal Sans', sans-serif;  /* フォントの設定 */
-}
