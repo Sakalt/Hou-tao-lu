@@ -18,7 +18,11 @@ const dictionary = [
                     }
                 ]
             }
-        ]
+        ],
+        "pronunciation": "rén"
     }
     // ここに他の単語データを追加
 ];
+
+// アルファベット順にソート
+dictionary.sort((a, b) => a.word.localeCompare(b.word));
