@@ -26,7 +26,7 @@
                 wordCard.appendChild(word);
 
                 const pronunciation = document.createElement('p');
-                pronunciation.textContent = `発音: ${entry.pronunciation}`;
+                pronunciation.textContent = `発音: ${entry.pronunciation} (${entry.bopomofo})`;
                 wordCard.appendChild(pronunciation);
 
                 entry.mean.forEach(mean => {
