@@ -1,0 +1,27 @@
+/* 単語カードのスタイル */
+.word-card {
+    background-color: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+/* 品詞の色を虹の9色に分ける */
+.noun { color: #FF4500; }    /* 赤オレンジ */
+.verb { color: #FF8C00; }    /* 橙色 */
+.adj { color: #FFD700; }     /* 黄色 */
+.adv { color: #ADFF2F; }     /* 黄緑色 */
+.pron { color: #32CD32; }    /* 緑色 */
+.num { color: #00CED1; }     /* シアン */
+.conj { color: #1E90FF; }    /* 青色 */
+.part { color: #9370DB; }    /* 紫色 */
+.intj { color: #FF1493; }    /* ディープピンク */
+
+/* 例文のスタイル */
+.example-frame {
+    border: 1px solid #323232;
+    background-color: #999999;
+    padding: 5px;
+    border-radius: 5px;
+}
