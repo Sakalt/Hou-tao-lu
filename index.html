@@ -1,1 +1,60 @@
-<!doctype html><html lang="ja"><head><meta charset="utf-8"/><link rel="icon" href="/favicon.svg" type="image/svg+xml"/><link rel="apple-touch-icon" href="/favicon_180.png"><link rel="icon" href="/favicon.ico" sizes="any"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="theme-color" content="#014f41"/><meta name="description" content="The dictionary of Phun language."/><link rel="apple-touch-icon" href="/logo192.png"/><link rel="manifest" href="/manifest.json"/><title>雰和辞典</title><script defer="defer" src="/static/js/main.82c52103.js"></script><link href="/static/css/main.e77b5eee.css" rel="stylesheet"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"></div></body></html>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>辞書</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="dictionary-container"></div>
+
+    <script src="dictionary.js"></script>
+    <script>
+        const container = document.getElementById('dictionary-container');
+
+        dictionary.forEach(entry => {
+            const wordCard = document.createElement('div');
+            wordCard.classList.add('word-card');
+
+            const word = document.createElement('h2');
+            word.textContent = entry.word;
+            wordCard.appendChild(word);
+
+            entry.mean.forEach(mean => {
+                const type = document.createElement('p');
+                type.textContent = mean.type;
+                type.classList.add(mean.type);
+                wordCard.appendChild(type);
+
+                mean.explanation.forEach(exp => {
+                    const translate = document.createElement('p');
+                    translate.textContent = exp.translate;
+                    wordCard.appendChild(translate);
+
+                    exp.example.forEach(ex => {
+                        const exampleFrame = document.createElement('div');
+                        exampleFrame.classList.add('example-frame');
+
+                        const examplePN = document.createElement('p');
+                        examplePN.textContent = ex.ht;
+                        exampleFrame.appendChild(exampleHT);
+
+                        const exampleJA = document.createElement('p');
+                        exampleJA.textContent = ex.ja;
+                        exampleFrame.appendChild(exampleJA);
+
+                        const examplePNPron = document.createElement('p');
+                        examplePNPron.textContent = ex.htPron;
+                        exampleFrame.appendChild(exampleHTPron);
+
+                        wordCard.appendChild(exampleFrame);
+                    });
+                });
+            });
+
+            container.appendChild(wordCard);
+        });
+    </script>
+</body>
+</html>
