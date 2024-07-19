@@ -15,6 +15,13 @@
         const container = document.getElementById('dictionary-container');
         const searchBox = document.getElementById('search-box');
 
+        const bopomofoOrder = "ㄅㄆㄇㄈㄉㄊㄋㄌㄍㄎㄏㄐㄑㄒㄓㄔㄕㄖㄗㄘㄙㄚㄛㄜㄝㄞㄟㄠㄡㄢㄣㄤㄥㄦㄧㄨㄩ";
+        const compareBopomofo = (a, b) => {
+            const aIndex = bopomofoOrder.indexOf(a.bopomofo[0]);
+            const bIndex = bopomofoOrder.indexOf(b.bopomofo[0]);
+            return aIndex - bIndex;
+        };
+
         function displayDictionary(entries) {
             container.innerHTML = '';
             entries.forEach(entry => {
@@ -23,7 +30,7 @@
 
                 const word = document.createElement('h2');
                 word.textContent = entry.word;
-                word.classList.add('Hotal Sans'); // フォントを適用
+                word.classList.add('HotalSans'); // フォントを適用
                 wordCard.appendChild(word);
 
                 const pronunciation = document.createElement('p');
@@ -47,7 +54,7 @@
 
                             const exampleHT = document.createElement('p');
                             exampleHT.textContent = ex.ht;
-                            exampleHT.classList.add('Hotal Sans'); // フォントを適用
+                            exampleHT.classList.add('HotalSans'); // フォントを適用
                             exampleFrame.appendChild(exampleHT);
 
                             const exampleJA = document.createElement('p');
@@ -84,6 +91,7 @@
         });
 
         // 初期表示
+        dictionary.sort(compareBopomofo);
         displayDictionary(dictionary);
     </script>
 </body>
