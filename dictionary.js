@@ -12,7 +12,7 @@ const dictionary = [
                             {
                                 "ht": "十七億人活在之丸。",
                                 "ja": "この星には81億の人が住む。",
-                                "htPron": "va2 tao3 ya2 tang3 ren2 i1 ao5 bao2。"
+                                "htPron": "va2 tao3 ya2 tang3 ren2 i1 ao3 bao2。"
                             }
                         ]
                     }
