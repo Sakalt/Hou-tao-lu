@@ -47,13 +47,3 @@ const dictionary = [
     }
     // ここに他の単語データを追加
 ];
-
-// 注音符号順にソート
-const bopomofoOrder = "ㄅㄆㄇㄈㄉㄊㄋㄌㄍㄎㄏㄐㄑㄒㄓㄔㄕㄖㄗㄘㄙㄚㄛㄜㄝㄞㄟㄠㄡㄢㄣㄤㄥㄦㄧㄨㄩ";
-const compareBopomofo = (a, b) => {
-    const aIndex = bopomofoOrder.indexOf(a.bopomofo[0]);
-    const bIndex = bopomofoOrder.indexOf(b.bopomofo[0]);
-    return aIndex - bIndex;
-};
-
-dictionary.sort(compareBopomofo);
