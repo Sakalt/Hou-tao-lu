@@ -23,6 +23,7 @@
 
                 const word = document.createElement('h2');
                 word.textContent = entry.word;
+                word.classList.add('Hotal Sans'); // フォントを適用
                 wordCard.appendChild(word);
 
                 const pronunciation = document.createElement('p');
@@ -46,6 +47,7 @@
 
                             const exampleHT = document.createElement('p');
                             exampleHT.textContent = ex.ht;
+                            exampleHT.classList.add('Hotal Sans'); // フォントを適用
                             exampleFrame.appendChild(exampleHT);
 
                             const exampleJA = document.createElement('p');
