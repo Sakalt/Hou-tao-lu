@@ -18,6 +18,10 @@ function displayDictionary(entries) {
         pronunciation.textContent = `発音: ${entry.pronunciation} (${entry.bopomofo})`;
         wordCard.appendChild(pronunciation);
 
+        const separator = document.createElement('div');
+        separator.classList.add('separator');
+        wordCard.appendChild(separator);
+
         entry.mean.forEach(mean => {
             const type = document.createElement('p');
             type.textContent = mean.type;
@@ -35,6 +39,7 @@ function displayDictionary(entries) {
 
                     const exampleHT = document.createElement('p');
                     exampleHT.textContent = ex.ht;
+                    exampleHT.classList.add('ht');
                     exampleFrame.appendChild(exampleHT);
 
                     const exampleJA = document.createElement('p');
