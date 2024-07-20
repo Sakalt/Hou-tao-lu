@@ -38,6 +38,25 @@ const dictionary = [
         relatedWords: ["人"]
     },
     {
+        word: "従",
+        pronunciation: "ua",
+        bopomofo: "ㄨㄚ",
+        mean: [
+            {
+                type: "verb",
+                explanation: [
+                    {
+                        translate: "従う、いいたりになる",
+                        example: [
+                            { ht: "我仁従", ja: "私はあなたにしたがう", htPron: "xe xa ua" }
+                        ]
+                    }
+                ]
+            }
+        ],
+        relatedWords: ["持力", "力"]
+    },
+    {
         word: "衆",
         pronunciation: "kao",
         bopomofo: "ㄎㄠ",
@@ -55,6 +74,25 @@ const dictionary = [
             }
         ],
         relatedWords: ["人民"]
+    },
+    {
+        word: "徒",
+        pronunciation: "ang",
+        bopomofo: "ㄤ",
+        mean: [
+            {
+                type: "noun",
+                explanation: [
+                    {
+                        translate: "すこし神聖な言い方、えらい人",
+                        example: [
+                            { ht: "徒人", ja: "神聖な人", htPron: "ang luang" }
+                        ]
+                    }
+                ]
+            }
+        ],
+        relatedWords: ["仁", "人"]
     },
     {
         word: "人民",
