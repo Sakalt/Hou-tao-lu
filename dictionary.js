@@ -131,5 +131,24 @@ const dictionary = [
             }
         ],
         relatedWords: ["持力", "従"]
+    },
+    {
+        word: "持力",
+        pronunciation: "gaon ao",
+        bopomofo: "ㄍㄠㄋ　ㄠ ",
+        mean: [
+            {
+                type: "noun",
+                explanation: [
+                    {
+                        translate: "権力,腕力,腕前",
+                        example: [
+                            { ht: "仁持力", ja: "あなたの権力", htPron: "xa gaon ao" }
+                        ]
+                    }
+                ]
+            }
+        ],
+        relatedWords: ["力", "従"]
     }
 ];
