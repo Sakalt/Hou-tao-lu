@@ -112,5 +112,24 @@ const dictionary = [
             }
         ],
         relatedWords: ["衆"]
+    },
+    {
+        word: "力",
+        pronunciation: "ao",
+        bopomofo: "ㄠ",
+        mean: [
+            {
+                type: "noun",
+                explanation: [
+                    {
+                        translate: "力,パワー,エネルギー",
+                        example: [
+                            { ht: "持力", ja: "権力", htPron: "gaon ao" }
+                        ]
+                    }
+                ]
+            }
+        ],
+        relatedWords: ["持力", "従"]
     }
 ];
