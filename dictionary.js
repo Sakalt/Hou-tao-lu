@@ -5,17 +5,18 @@ const dictionary = [
         bopomofo: "ㄌㄨㄤ",
         mean: [
             {
-                type: "名詞",
+                type: "noun",
                 explanation: [
                     {
-                        translate: "人間。",
+                        translate: "人間、ひと",
                         example: [
                             { ht: "人", ja: "ひと", htPron: "luang" }
                         ]
                     }
                 ]
             }
-        ]
+        ],
+        relatedWords: ["仁", "衆"]
     },
     {
         word: "仁",
@@ -23,17 +24,18 @@ const dictionary = [
         bopomofo: "ㄒㄚ",
         mean: [
             {
-                type: "名詞",
+                type: "noun",
                 explanation: [
                     {
-                        translate: "二人称。",
+                        translate: "二人称、あなた",
                         example: [
                             { ht: "仁", ja: "あなた", htPron: "xa" }
                         ]
                     }
                 ]
             }
-        ]
+        ],
+        relatedWords: ["人"]
     },
     {
         word: "衆",
@@ -41,34 +43,36 @@ const dictionary = [
         bopomofo: "ㄎㄠ",
         mean: [
             {
-                type: "名詞",
+                type: "noun",
                 explanation: [
                     {
-                        translate: "多数の人。",
+                        translate: "三人称、多くの人々",
                         example: [
                             { ht: "衆", ja: "おおぜい", htPron: "kao" }
                         ]
                     }
                 ]
             }
-        ]
+        ],
+        relatedWords: ["人民"]
     },
     {
         word: "人民",
-        pronunciation: "kaoren",
-        bopomofo: "ㄎㄠ ㄖㄣ",
+        pronunciation: "kao",
+        bopomofo: "ㄎㄠ",
         mean: [
             {
-                type: "名詞",
+                type: "noun",
                 explanation: [
                     {
-                        translate: "衆↔人民間連語。",
+                        translate: "国民",
                         example: [
-                            { ht: "人民", ja: "じんみん", htPron: "kaoren" }
+                            { ht: "人民", ja: "こくみん", htPron: "kao" }
                         ]
                     }
                 ]
             }
-        ]
+        ],
+        relatedWords: ["衆"]
     }
 ];
