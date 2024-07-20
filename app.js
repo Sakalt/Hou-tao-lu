@@ -55,6 +55,24 @@ function displayDictionary(entries) {
             });
         });
 
+        const relatedWordsContainer = document.createElement('div');
+        relatedWordsContainer.classList.add('related-words');
+
+        if (entry.relatedWords) {
+            entry.relatedWords.forEach(relatedWord => {
+                const relatedWordLink = document.createElement('span');
+                relatedWordLink.classList.add('related-word');
+                relatedWordLink.textContent = relatedWord;
+                relatedWordLink.addEventListener('click', () => {
+                    searchBox.value = relatedWord;
+                    searchDictionary(relatedWord);
+                });
+
+                relatedWordsContainer.appendChild(relatedWordLink);
+            });
+        }
+
+        wordCard.appendChild(relatedWordsContainer);
         container.appendChild(wordCard);
     });
 }
