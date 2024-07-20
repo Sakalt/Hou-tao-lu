@@ -1,49 +1,74 @@
 const dictionary = [
     {
-        "word": "人",
-        "mean": [
+        word: "人",
+        pronunciation: "luang",
+        bopomofo: "ㄌㄨㄤ",
+        mean: [
             {
-                "type": "名詞",
-                "explanation": [
+                type: "名詞",
+                explanation: [
                     {
-                        "translate": "人。人間。",
-                        "tag": [],
-                        "example": [
-                            {
-                                "ht": "十七億人活在之丸。",
-                                "ja": "この星には81億の人が住む。",
-                                "htPron": "va2 tao3 ya2 tang3 ren2 i1 ao3 bao2。"
-                            }
+                        translate: "人間。",
+                        example: [
+                            { ht: "人", ja: "ひと", htPron: "luang" }
                         ]
                     }
                 ]
             }
-        ],
-        "pronunciation": "rén",
-        "bopomofo": "ㄖㄣˊ"
+        ]
     },
     {
-        "word": "衆",
-        "mean": [
+        word: "仁",
+        pronunciation: "xa",
+        bopomofo: "ㄒㄚ",
+        mean: [
             {
-                "type": "名詞",
-                "explanation": [
+                type: "名詞",
+                explanation: [
                     {
-                        "translate": "たち。みんな。",
-                        "tag": [],
-                        "example": [
-                            {
-                                "ht": "衆動集去",
-                                "ja": "皆が集まった。",
-                                "htPron": "zhong1 pai3 an2 ung3."
-                            }
+                        translate: "二人称。",
+                        example: [
+                            { ht: "仁", ja: "あなた", htPron: "xa" }
                         ]
                     }
                 ]
             }
-        ],
-        "pronunciation": "zhòng",
-        "bopomofo": "ㄓㄨㄥˋ"
+        ]
+    },
+    {
+        word: "衆",
+        pronunciation: "kao",
+        bopomofo: "ㄎㄠ",
+        mean: [
+            {
+                type: "名詞",
+                explanation: [
+                    {
+                        translate: "多数の人。",
+                        example: [
+                            { ht: "衆", ja: "おおぜい", htPron: "kao" }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        word: "人民",
+        pronunciation: "kaoren",
+        bopomofo: "ㄎㄠ ㄖㄣ",
+        mean: [
+            {
+                type: "名詞",
+                explanation: [
+                    {
+                        translate: "衆↔人民間連語。",
+                        example: [
+                            { ht: "人民", ja: "じんみん", htPron: "kaoren" }
+                        ]
+                    }
+                ]
+            }
+        ]
     }
-    // ここに他の単語データを追加
 ];
