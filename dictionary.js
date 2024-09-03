@@ -55,5 +55,43 @@ const dictionary = [
             }
         ],
         relatedWords: ["赦", "有"]
+    },
+    {
+        word: "粘乳",
+        pronunciation: "aom nom",
+        bopomofo: "?",
+        mean: [
+            {
+                type: "noun",
+                explanation: [
+                    {
+                        translate: "人間、ひと",
+                        example: [
+                            { ht: "旭時粘乳食", ja: "朝ヨーグルトを食べる", htPron: "aom nom zang" }
+                        ]
+                    }
+                ]
+            }
+        ],
+        relatedWords: ["仁", "衆"]
+    },
+    {
+        word: "桜",
+        pronunciation: "tan",
+        bopomofo: "?",
+        mean: [
+            {
+                type: "noun",
+                explanation: [
+                    {
+                        translate: "桜、ピンク",
+                        example: [
+                            { ht: "桜目", ja: "桜見", htPron: "tan tong" }
+                        ]
+                    }
+                ]
+            }
+        ],
+        relatedWords: ["仁", "衆"]
     }
 ];
