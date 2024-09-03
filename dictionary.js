@@ -73,7 +73,7 @@ const dictionary = [
                 ]
             }
         ],
-        relatedWords: ["仁", "衆"]
+        relatedWords: ["粘", "乳"]
     },
     {
         word: "桜",
@@ -93,5 +93,62 @@ const dictionary = [
             }
         ],
         relatedWords: ["仁", "衆"]
+    },
+    {
+        word: "北",
+        pronunciation: "kong",
+        bopomofo: "?",
+        mean: [
+            {
+                type: "noun",
+                explanation: [
+                    {
+                        translate: "北、極",
+                        example: [
+                            { ht: "我家北訓庵有", ja: "うちの北には学校がある。", htPron: "xaing sa kong lua pai bais" }
+                        ]
+                    }
+                ]
+            }
+        ],
+        relatedWords: ["南", "焉"]
+    },
+    {
+        word: "東",
+        pronunciation: "bai",
+        bopomofo: "?",
+        mean: [
+            {
+                type: "noun",
+                explanation: [
+                    {
+                        translate: "東",
+                        example: [
+                            { ht: "東西南北", ja: "東西南北", htPron: "bai nai hom kong" }
+                        ]
+                    }
+                ]
+            }
+        ],
+        relatedWords: ["西", "日"]
+    },
+    {
+        word: "日",
+        pronunciation: "qaim",
+        bopomofo: "?",
+        mean: [
+            {
+                type: "noun",
+                explanation: [
+                    {
+                        translate: "日,太陽",
+                        example: [
+                            { ht: "日", ja: "太陽", htPron: "qaim" }
+                        ]
+                    }
+                ]
+            }
+        ],
+        relatedWords: ["月", "光"]
     }
 ];
