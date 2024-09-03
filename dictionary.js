@@ -150,5 +150,24 @@ const dictionary = [
             }
         ],
         relatedWords: ["月", "光"]
+    },
+    {
+        word: "雷与尾",
+        pronunciation: "re luong maing",
+        bopomofo: "?",
+        mean: [
+            {
+                type: "noun",
+                explanation: [
+                    {
+                        translate: "充電コード",
+                        example: [
+                            { ht: "雷与尾", ja: "充電コード", htPron: "re luong maing" }
+                        ]
+                    }
+                ]
+            }
+        ],
+        relatedWords: ["月", "光"]
     }
 ];
