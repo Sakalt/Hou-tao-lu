@@ -19,6 +19,25 @@ const dictionary = [
         relatedWords: ["仁", "衆"]
     },
     {
+        word: "仁",
+        pronunciation: "dao",
+        bopomofo: "?",
+        mean: [
+            {
+                type: "noun",
+                explanation: [
+                    {
+                        translate: "あなた",
+                        example: [
+                            { ht: "仁", ja: "あなた", htPron: "dao" }
+                        ]
+                    }
+                ]
+            }
+        ],
+        relatedWords: ["人", "衆"]
+    },
+    {
         word: "力",
         pronunciation: "li",
         bopomofo: "ㄌㄧˋ",
